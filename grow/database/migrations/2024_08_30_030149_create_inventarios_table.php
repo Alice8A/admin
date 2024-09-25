@@ -26,7 +26,11 @@ return new class extends Migration
             $table->string('estado');  
             $table->string('entrega');
             $table->string('recibe');
+            $table->unsignedBigInteger('userId');           
+            $table->foreign('userId')->references('id')->on('users');
             $table->timestamps();
+
+            
         });
     }
 

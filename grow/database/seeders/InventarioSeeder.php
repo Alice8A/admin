@@ -31,6 +31,7 @@ class InventarioSeeder extends Seeder
     $pr->estado         = 'Activo';
     $pr->entrega        = 'Karen Caceres';
     $pr->recibe         = 'Siso';
+    $pr->userId         = '1';
     $pr->save();
 
     }
